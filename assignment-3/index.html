@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order a Pizza</title>
+    <meta name="author" content="Reuben Cormier" >
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1> Order a Pizza</h1>
+    </header>
+
+    <main>
+        <h2>Place Your Order</h2>
+
+        <form id="pizza-form">
+            <h3>Size:</h3>
+            <select id="size" name="size" required>
+                <option value="">Select Size</option>
+                <option value="Small">Small (6 slices)</option>
+                <option value="Medium">Medium (8 slices)</option>
+                <option value="Large">Large (10 slices)</option>
+                <option value="Extra Large">Extra Large (12 slices)</option>
+                <option value="Party Size">Party Size (24 slices)</option>
+            </select>
+
+            <h3>Crust:</h3>
+            <select id="crust" name="crust">
+                <option value="">Select Crust</option>
+                <option value="Classic">Classic</option>
+                <option value="Thin">Thin</option>
+                <option value="Deep">Deep Dish</option>
+                <option value="Stuffed">Stuffed</option>
+            </select>
+
+            <h3>Sauce:</h3>
+            <select id="sauce" name="sauce">
+                <option value="">Select Sauce</option>
+                <option value="Tomato">Tomato</option>
+                <option value="Alfredo">Alfredo</option>
+                <option value="BBQ">BBQ</option>
+                <option value="None">None</option>
+            </select>
+
+            <h3>Cheese:</h3>
+            <select id="cheese" name="cheese">
+                <option value="">Select Cheese</option>
+                <option value="Regular">Regular</option>
+                <option value="Extra">Extra</option>
+                <option value="Lactose-free">Lactose-Free</option>
+                <option value="None">None</option>
+            </select>
+                   
+            <h3>Meats:</h3>
+            <input type="checkbox" id="pepperoni" name="meats" value="Pepperoni">
+            <label for="pepperoni">Pepperoni</label>    
+            <input type="checkbox" id="sausage" name="meats" value="Sausage">
+            <label for="sausage">Sausage</label>    
+            <input type="checkbox" id="bacon" name="meats" value="Bacon">
+            <label for="bacon">Bacon Strips</label>    
+            <input type="checkbox" id="ham" name="meats" value="Ham">
+            <label for="ham">Ham</label>        
+
+            <h3>Veggies:</h3>
+            <input type="checkbox" id="gpeppers" name="veggies" value="Peppers">
+            <label for="gpeppers">Green Peppers</label>    
+            <input type="checkbox" id="golives" name="veggies" value="Green Olives">
+            <label for="golives">Green Olives</label>    
+            <input type="checkbox" id="bolives" name="veggies" value="Black Olives">
+            <label for="bolives">Black Olives</label>    
+            <input type="checkbox" id="mushrooms" name="veggies" value="Mushrooms">
+            <label for="mushrooms">Mushrooms</label>    
+            <input type="checkbox" id="ronions" name="veggies" value="Red Onions">
+            <label for="ronions">Red Onions</label>        
+
+
+            <h3>Order Type:</h3>
+            <input type="radio" id="Takeout" name="orderType" value="Takeout">
+            <label for="Take Out">Take Out</label>
+            <input type="radio" id="Dine In" name="orderType" value="Dine In">
+            <label for="Dine In">Eat In</label>
+            <input type="radio" id="Delivery" name="orderType" value="Delivery">
+            <label for="Delivery">Delivery</label>
+
+                
+            <div class="button-container">
+                <button type="submit">Order</button>
+            </div>
+        </form>
+
+        <div id="cart"></div>
+
+    </main>
+
+</body>
+
+</html>
